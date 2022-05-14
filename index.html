@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--o comando viewport (janela de visualização), que é a área visível do usuário em
+uma página da web. Ele varia com o dispositivo e será menor em um telefone celular do que
+em uma tela de computador.-->
+
+    <!--A width=device-width: parte define a largura da página para seguir a largura da tela do
+dispositivo (que irá variar dependendo do dispositivo).-->
+
+    <!--A initial-scale=1: parte define o nível de zoom inicial quando a página é carregada pela
+primeira vez pelo navegador.-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">     
+        <!-- link de onde será baixada todas as configurações para o nosso bootstrap, e com
+isso estilizar o nosso website automaticamente-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--os dois links que nos ajudaram na configuração do nosso site. Eles são
+os scripts Javascript, que adicionam algumas funções ao website, como pop-up, avisos,
+animações e etc.-->
+
+    <title>Sir Tim Berners-Lee</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar-inverse myNavbar"> <!--A tag <nav> é usada para conter todos os itens do menu dentro dele.-->
+        <!--O navbar-inverse é uma propriedade bootstrap CSS. Nós a usamos chamando-a dentro
+        da classe (class) do elemento; é usado para dispor uma barra de menu com uma cor de
+        plano de fundo e uma cor de fonte.-->
+
+        <div class="navbar-header"> <!-- navbar-header: uma classe estrutural para o Bootstrap navbar. Ele
+            realoca aproximadamente 150px para a esquerda do navbar para enquadrar o navbar-brand.
+            Mas a propriedade mais útil do navbar-header é sua adaptação de 100% em larguras até 768px
+            (tela de tablets). Também nos auxilia a colocar itens no lado esquerdo da barra.-->
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <!--  navbar-toggle: É uma propriedade bootstrap CSS e nós a usamos chamando-a dentro da classe de um elemento. Ela ajuda a 
+                estilizar botões e também faz com que os botões só apareçam em tablets e celulares(telas com resolução de 768px horizontalmente.)-->
+
+              <!--data-toggle="collapse" Indica que algo será aberto quando o botão for clicado.-->
+
+              <!-- data-target="#myNavbar" Indica que quando o botão for clicado tanto o <div> com o id =
+myNavbar devem abrir.-->
+
+            <span class="icon-bar"></span> <!--icon-bar: Usamos essa propriedade para criar as 3 linhas -->
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Perter Parker</a> 
+          <!--Anchor tag <a>: A funcionalidade da Anchor tag (Tag âncora) é: quando alguém clicar no nome
+            do site será redirecionado para a página principal.
+            Até então já adicionamos ‘#’ (hashtag), mas você (o aluno) precisa trocar o # pelo link do seu site
+            (do aluno) depois que você concluir a montagem.-->
+
+            <!-- navbar-brand: Essa também é mais uma propriedade bootstrap CSS e nós a usamos
+chamando-a dentro da classe de um elemento - É usado para adicionar cor da fonte,
+tamanho, margem, tamanho da fonte e textura ao nome do nosso site-->
+
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <!--Tag div: Ele é usado para manter todos os itens na barra.-->
+
+            <!--collapse: Essa também é uma propriedade bootstrap CSS e nós a usamos chamando-a
+dentro da classe de um elemento. Essa propriedade manda o <div> esconder todos os
+itens quando a resolução da tela for de um tablet ou celular (menos de 768px
+horizontalmente).-->
+
+            <!--navbar-collapse - Essa também é outra propriedade bootstrap CSS e nós a usamos
+chamando-a dentro da classe de um elemento. É o corpo completo do estilo e amostra dos
+itens do menu. Adicione a cor do plano de fundo e mostre o menu grande quando o
+tamanho da tela for maior que 768px. E é escondido quando a resolução é menor que 768px-->
+
+            <!--id="myNavbar" é a identificação do div, ele abre o div quando o elemento que possui
+data-target="#myNavbar" é clicado. No momento esse elemento é um botão.-->
+
+          <ul class="nav navbar-nav">
+
+            <!-- nav navbar-nav - É propriedades bootstrap CSS e nós as usamos chamando-as dentro
+da classe de um elemento. Elas servem tanto para alinhar quanto para estilizar os itens da
+lista.-->
+
+            <li><a href="#BEM-VINDOS">INÍCIO</a></li>
+            <li><a href="#videos">VIDEOS</a></li>
+            <li><a href="#Trabalhos">TRABALHO</a></li>
+            <li><a href="#Escritos">ESCRITOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+          </ul>
+        </div>
+    
+</nav>
+
+    <section id="welcome">
+        <div class="parallax-inner">
+            <img src="stbl.jpg" class="profile" />
+            <h1>Eu sou <br><span id="name">Tim Berners-Lee</span></h1>
+            <h2> Sou o fundador da www: World Wide Web</h2>
+        </div>
+
+    </section>
+
+
+    <section id="bio">
+        <h1>Oi!</h1>
+        <div class="line"></div>
+        <p>Tim Berners-Lee é um engenheiro de software que inventou a Internet (ou a World Wide Web) em 1989 enquanto em
+			CERN, o Laboratório Europeu de Física de Partículas.
+			
+			Ele é diretor do World Wide Web Consortium que fundou e Professor no Departamento de Ciência da Computação
+			da Universidade de Oxford.
+			
+			Em 2001 tornou-se Fellow da Royal Society e em 2004 foi nomeado cavaleiro. <br /> <br /> Em 1994 Berners-Lee
+			fundou o World Wide Web Consortium (W3C) no Laboratório de Ciência da Computação (LCS) em Massachusetts
+			Instituto de Tecnologia de Boston. Era formado por empresas que queriam trabalhar juntas para criar a Web
+			padrões e também melhorar a web. Foi rapidamente acordado que a tecnologia deveria ser isenta de royalties
+			e patentes. Berners-Lee atua como diretor deste W3C desde que foi fundado.
+			
+			Em 1995, a Microsoft produziu a primeira versão do Internet Explorer e este navegador comercial criou
+			enorme crescimento em sites e usuários da web.
+			
+			A Web foi usada pela primeira vez para comércio eletrônico em 1997.</p>
+    </section>
+<hr>
+    <section id="videos">
+        <h1>Vídeos</h1>
+        <div class="line"></div>
+        <br>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/OM6XIICm_qo" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <br>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+<hr>
+<section id="work" style="width: 100%;">
+    <h1>TRABALHO</h1>
+    <div class="line"></div>
+    <iframe class="work_iframe" height="1000" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research" frameborder="0" style="width: 80%; margin: 10px;"></iframe>
+
+</section>
+   
+<hr>
+
+   <section id="writings">
+        <h1>ESCRITOS</h1>
+        <div class="line"></div>
+        <a href="https://brasil.elpais.com/brasil/2019/03/11/opinion/1552298297_783559.html" target="_blank">As três ameaças 
+			que pairam sobre a web</a>
+        <br>
+        <a href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web"
+            target="_blank">Artigo em inglês: How Did Tim Berners-Lee Change the World With the World Wide Web?</a>
+    </section>
+    <hr>
+    
+    <section id="contact">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.3520829464787!2d-43.929574785106176!3d-19.95169018659159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6999ed62daafd%3A0x566567081174064b!2sBYJU&#39;S%20FutureSchool!5e0!3m2!1spt-BR!2sbr!4v1634572700786!5m2!1spt-BR!2sbr" 
+        height="450" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="contact_1">
+
+            <a href="mailto:someone@example.com?Subject=Hello">
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>mygmailid@gmail.com</h3>
+            </a>
+
+            <br>
+            <br>
+
+            <a href="#">
+                <i class="fa fa-instagram"></i>&nbsp;&nbsp;<h3>myinstagramid</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
